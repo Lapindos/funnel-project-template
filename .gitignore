@@ -1,0 +1,15 @@
+.DS_Store
+.idea/
+.vscode/
+
+# secrets — никогда не коммитим
+.env
+.env.*
+*.secret
+*secret*.json
+credentials*.json
+tokens*.json
+
+# сырые выгрузки сервисов
+exports/raw/
+*.tmp
