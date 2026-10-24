@@ -56,7 +56,7 @@ ARRAYFORMULA во второй строке. Формулы убирают ли�
 Елена / telegram / social / lesson08 / new. Результат скачан и лежит
 в этой папке как `leads_clean.csv`.
 
-Скриншот: вставьте строку `![leads_clean после импорта v2](screens/06-v2.png)`
+![leads_clean после импорта v2](screens/06-v2.png)
 
 ## 5. Проверка структуры
 
