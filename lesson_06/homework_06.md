@@ -46,7 +46,7 @@ ARRAYFORMULA во второй строке. Формулы убирают ли�
 
 ![Ошибка #VALUE! и её подсказка](screens/04-value-error.png)
 
-Скриншот: вставьте строку `![Раскрытый фильтр status](screens/05-status-filter.png)`
+![Раскрытый фильтр status](screens/05-status-filter.png)
 
 ## 4. Вторая выгрузка
 
