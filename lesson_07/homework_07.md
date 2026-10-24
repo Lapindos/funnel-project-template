@@ -48,7 +48,7 @@
 
 Скриншот: вставьте строку `![Сообщение в Direct с кнопкой](screens/05-direct.png)`
 
-Скриншот: вставьте строку `![guide.html с UTM в адресной строке](screens/06-guide-utm.png)`
+![guide.html с UTM в адресной строке](screens/06-guide-utm.png)
 
 ## 3. Результат
 
