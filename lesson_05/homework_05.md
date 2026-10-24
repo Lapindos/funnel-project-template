@@ -46,7 +46,7 @@
 
 Скриншот: вставьте строку `![Окно развёртывания с адресом Web app](screens/03-deployment.png)`
 
-Скриншот: вставьте строку `![Форма в contacts.html: action и скрытые поля UTM](screens/04-form.png)`
+![Форма в contacts.html: action и скрытые поля UTM](screens/04-form.png)
 
 ## 3. Две тестовые заявки
 

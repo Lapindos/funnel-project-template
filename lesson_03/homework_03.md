@@ -38,7 +38,7 @@
 
 Скриншот: вставьте строку `![Сообщение об обнаружении тега Google](screens/01-tag-detected.png)`
 
-Скриншот: вставьте строку `![Код тега на странице, виден Measurement ID](screens/02-tag-in-code.png)`
+![Код тега на странице, виден Measurement ID](screens/02-tag-in-code.png)
 
 ## 3. События доходят до аналитики
 
