@@ -52,6 +52,8 @@ https://www.smashingmagazine.com/, https://css-tricks.com/. Открывать
 
 ![Панель Network со списком запросов](screens/01-network.png)
 
+![Payload события page_view](screens/02-payload.png)
+
 
 ## 3. Путь пользователя: 5 шагов
 
