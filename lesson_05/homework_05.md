@@ -18,16 +18,16 @@
 
 ## 1. Таблица
 
-Я создал таблицу «GA4 Analytics Lab — Leads» с листом `leads`. В первой
+Я создал таблицу «GA4 Analytics Lab — Leads Receiver» с листом `leads`. В первой
 строке девять заголовков: `request_id`, `created_at`, `name`, `email`,
 `direction`, `utm_source`, `utm_medium`, `utm_campaign`, `status`. Строка
 заголовков закреплена, у статуса список из четырёх значений: `new`,
 `in_progress`, `done`, `rejected`. Два правила подсвечивают неполную строку
 и повторный `request_id`.
 
-Ссылка на таблицу (доступ открыт только преподавателю): ___
+Ссылка на таблицу (доступ открыт только преподавателю): https://docs.google.com/spreadsheets/d/1JrCGxBnLeTIZomFNaaW9EYMad4Ydp14_UDLRGROt9co/edit
 
-Скриншот: вставьте строку `![Лист leads: заголовки, закреплённая строка, список статусов](screens/01-sheet.png)`
+![Лист leads: заголовки, закреплённая строка, список статусов](screens/01-sheet.png)
 
 ## 2. Приёмник и форма
 
@@ -38,13 +38,13 @@
 
 | Мои данные | Значение |
 |---|---|
-| Публичный адрес сайта |  |
-| Measurement ID (`G-…`) |  |
-| Коммит с новой формой (первые 7 символов) |  |
+| Публичный адрес сайта | https://ga4-analytics-lab-beryl.vercel.app/ |
+| Measurement ID (`G-…`) | G-YQM8LSJ9F7 |
+| Коммит с новой формой (первые 7 символов) | `774a446` |
 
-Скриншот: вставьте строку `![Code.gs с ID своей таблицы](screens/02-apps-script.png)`
+![Code.gs с ID своей таблицы](screens/02-apps-script.png)
 
-Скриншот: вставьте строку `![Окно развёртывания с адресом Web app](screens/03-deployment.png)`
+![Окно развёртывания с адресом Web app](screens/03-deployment.png)
 
 ![Форма в contacts.html: action и скрытые поля UTM](screens/04-form.png)
 
@@ -57,9 +57,9 @@
 
 | | Заявка без меток | Заявка с метками |
 |---|---|---|
-| `request_id` |  |  |
+| `request_id` | REQ-1DAE07DF-34C5-4304-B9E1-248C5F7D4DB3 |  |
 
-Скриншот: вставьте строку `![Строка заявки без меток](screens/05-lead-direct.png)`
+![Строка заявки без меток](screens/05-lead-direct.png)
 
 Скриншот: вставьте строку `![Строка заявки с метками](screens/06-lead-utm.png)`
 
