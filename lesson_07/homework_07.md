@@ -26,27 +26,27 @@
 
 | Мои данные | Значение |
 |---|---|
-| Учебный аккаунт Instagram |  |
-| Ссылка на учебную публикацию |  |
-| Публичный адрес сайта |  |
-| Measurement ID (`G-…`) |  |
+| Учебный аккаунт Instagram | priba.py |
+| Ссылка на учебную публикацию | https://www.instagram.com/reels/De7bkHSOIbT/ |
+| Публичный адрес сайта | https://ga4-analytics-lab-beryl.vercel.app/ |
+| Measurement ID (`G-…`) | G-YQM8LSJ9F7 |
 
-Скриншот: вставьте строку `![Instagram подключён к ManyChat](screens/01-connected.png)`
+![Instagram подключён к ManyChat](screens/01-connected.png)
 
-Скриншот: вставьте строку `![Flow Builder целиком, статус Live](screens/02-flow.png)`
+![Flow Builder целиком, статус Live](screens/02-flow.png)
 
-Скриншот: вставьте строку `![Триггер: Specific Post и ГАЙД](screens/03-trigger.png)`
+![Триггер: Specific Post и ГАЙД](screens/03-trigger.png)
 
 ## 2. Тест цепочки
 
-Со второго аккаунта ___ я оставил комментарий `ГАЙД`. Под ним появился
+Со второго аккаунта turtle.2327751 я оставил комментарий `ГАЙД`. Под ним появился
 автоматический ответ, а в Direct пришло сообщение с кнопкой. Кнопка
 открыла `guide.html` с метками в адресе, оттуда я перешёл к форме
 и отправил тестовую заявку.
 
-Скриншот: вставьте строку `![Комментарий и автоматический ответ](screens/04-comment.png)`
+![Комментарий и автоматический ответ](screens/04-comment.png)
 
-Скриншот: вставьте строку `![Сообщение в Direct с кнопкой](screens/05-direct.png)`
+![Сообщение в Direct с кнопкой](screens/05-direct.png)
 
 ![guide.html с UTM в адресной строке](screens/06-guide-utm.png)
 
@@ -56,11 +56,11 @@
 В листе `leads` появилась строка с метками `instagram` / `social` /
 `backend_guide` и статусом `new`.
 
-`request_id` заявки: ___
+`request_id` заявки: REQ-312B38A2-2F33-4672-B698-1C21925CA9C9
 
-Скриншот: вставьте строку `![page_view и generate_lead в GA4](screens/07-ga4.png)`
+![page_view и generate_lead в GA4](screens/07-ga4.png)
 
-Скриншот: вставьте строку `![Строка заявки из Instagram в листе leads](screens/08-lead.png)`
+![Строка заявки из Instagram в листе leads](screens/08-lead.png)
 
 ---
 
