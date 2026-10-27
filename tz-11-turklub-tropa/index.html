@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Главная — турклуб «Тропа»</title>
+  <meta name="description" content="Зимние походы турклуба «Тропа» вокруг Новоозёрска: 6 маршрутов, календарь мест и бронь.">
+  <meta property="og:title" content="Главная — турклуб «Тропа»">
+  <meta property="og:description" content="Зимние походы турклуба «Тропа» вокруг Новоозёрска: 6 маршрутов, календарь мест и бронь.">
+  <meta property="og:image" content="https://tz-11-turklub-tropa.vercel.app/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Measurement ID: сейчас учебный G-YQM8LSJ9F7 из домашних работ. Для ТЗ замените на ресурс «ТРОПА — сайт», см. docs/podklyuchenie.md -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQM8LSJ9F7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YQM8LSJ9F7');
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html"><span class="logo-word">ТРОПА</span><small>походы выходного дня</small></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+    <nav class="nav" id="site-nav">
+      <a href="index.html" aria-current="page">Главная</a><a href="trips.html">Маршруты</a><a href="calendar.html">Календарь</a><a href="guides.html">Инструкторы</a><a href="gear.html">Снаряжение</a><a href="contacts.html">Бронь</a>
+      <a class="header-phone" href="tel:+79001111131" data-event="contact_click" data-contact-type="phone">+7 (900) 111-11-31</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Зима 2026 · Новоозёрск</p>
+      <h1>Зимние походы: 6 маршрутов</h1>
+      <p class="lead">Однодневные и выходные выезды по горам и озёрам вокруг Новоозёрска. Место бронируется на сайте, а не в переписке: если на дату мест нет, календарь сразу показывает другую дату того же маршрута.</p>
+      <div class="actions">
+        <a class="btn" href="#picker" data-event="cta_click" data-button-name="hero_pick" data-page-section="hero">Выбрать поход</a>
+        <a class="btn btn-ghost" href="calendar.html" data-event="cta_click" data-button-name="hero_calendar" data-page-section="hero">Смотреть даты</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2 000</b> участников в год</div>
+      <div class="stat"><b>16</b> человек в группе</div>
+      <div class="stat"><b>58</b> в сентябре не получили другую дату</div>
+      <div class="stat"><b>6</b> зимних маршрутов</div>
+    </div>
+  </div>
+</section>
+<section class="section" id="picker">
+  <div class="wrap">
+    <h2>Подбор похода</h2>
+    <p>Фильтр по сложности и длительности. Цена указана за одно место.</p>
+    <form class="filter" data-filter>
+  <label>Сложность
+    <select name="difficulty">
+      <option value="all">Любая</option>
+      <option value="easy">Легко</option>
+      <option value="medium">Средне</option>
+      <option value="hard">Сложно</option>
+    </select>
+  </label>
+  <label>Длительность
+    <select name="duration_days">
+      <option value="all">Любая</option>
+      <option value="1">1 день</option>
+      <option value="2">2 дня</option>
+      <option value="3">3 дня и Новогодняя изба</option>
+    </select>
+  </label>
+</form>
+<p class="empty-note" data-filter-empty>Нет маршрута с такой сложностью и длительностью. Сбросьте один из фильтров.</p>
+
+    <div class="cards"><article class="card" id="icefalls" data-trip-card data-difficulty="easy" data-days="1">
+  <img src="img/icefalls.jpg" width="640" height="360" alt="Графический плакат маршрута «Ледяные водопады». Это не фотография места.">
+  <div class="card-body">
+    <h3><a href="trips.html#icefalls" data-event="trip_view" data-trip-id="icefalls" data-difficulty="easy">Ледяные водопады</a></h3>
+    <div class="meta"><span class="badge">легко</span><span class="badge">1 день</span></div>
+    <p>Однодневный маршрут к ледяным водопадам. Подходит тем, кто идёт без опыта.</p>
+    <p class="price">3 500 ₽</p>
+    <a class="btn" href="contacts.html?trip_id=icefalls" data-event="cta_click" data-button-name="trip_book" data-page-section="picker">Забронировать</a>
+  </div>
+</article>
+
+<article class="card" id="snowshoes" data-trip-card data-difficulty="easy" data-days="1">
+  <img src="img/snowshoes.jpg" width="640" height="360" alt="Графический плакат маршрута «Снегоступы для начинающих». Это не фотография места.">
+  <div class="card-body">
+    <h3><a href="trips.html#snowshoes" data-event="trip_view" data-trip-id="snowshoes" data-difficulty="easy">Снегоступы для начинающих</a></h3>
+    <div class="meta"><span class="badge">легко</span><span class="badge">1 день</span></div>
+    <p>Однодневный выход на снегоступах для тех, кто в походе впервые.</p>
+    <p class="price">2 900 ₽</p>
+    <a class="btn" href="contacts.html?trip_id=snowshoes" data-event="cta_click" data-button-name="trip_book" data-page-section="picker">Забронировать</a>
+  </div>
+</article>
+
+<article class="card" id="sunrise" data-trip-card data-difficulty="medium" data-days="1">
+  <img src="img/sunrise.jpg" width="640" height="360" alt="Графический плакат маршрута «Рассвет на Седой горе». Это не фотография места.">
+  <div class="card-body">
+    <h3><a href="trips.html#sunrise" data-event="trip_view" data-trip-id="sunrise" data-difficulty="medium">Рассвет на Седой горе</a></h3>
+    <div class="meta"><span class="badge">средне</span><span class="badge">1 день</span></div>
+    <p>Однодневный выход к рассвету. Сложность средняя, это не маршрут «легко».</p>
+    <p class="price">3 900 ₽</p>
+    <a class="btn" href="contacts.html?trip_id=sunrise" data-event="cta_click" data-button-name="trip_book" data-page-section="picker">Забронировать</a>
+  </div>
+</article>
+
+<article class="card" id="plateau" data-trip-card data-difficulty="medium" data-days="2">
+  <img src="img/plateau.jpg" width="640" height="360" alt="Графический плакат маршрута «Снежное плато». Это не фотография места.">
+  <div class="card-body">
+    <h3><a href="trips.html#plateau" data-event="trip_view" data-trip-id="plateau" data-difficulty="medium">Снежное плато</a></h3>
+    <div class="meta"><span class="badge">средне</span><span class="badge">2 дня</span></div>
+    <p>Два дня на снежном плато. Сложность средняя. В многодневном походе входит горячее питание.</p>
+    <p class="price">7 900 ₽</p>
+    <a class="btn" href="contacts.html?trip_id=plateau" data-event="cta_click" data-button-name="trip_book" data-page-section="picker">Забронировать</a>
+  </div>
+</article>
+
+<article class="card" id="traverse" data-trip-card data-difficulty="hard" data-days="3">
+  <img src="img/traverse.jpg" width="640" height="360" alt="Графический плакат маршрута «Лыжный траверс». Это не фотография места.">
+  <div class="card-body">
+    <h3><a href="trips.html#traverse" data-event="trip_view" data-trip-id="traverse" data-difficulty="hard">Лыжный траверс</a></h3>
+    <div class="meta"><span class="badge badge-hard">сложно</span><span class="badge">3 дня</span></div>
+    <p>Три дня лыжного перехода. Сложность честно указана как «сложно».</p>
+    <p class="price">11 500 ₽</p>
+    <a class="btn" href="contacts.html?trip_id=traverse" data-event="cta_click" data-button-name="trip_book" data-page-section="picker">Забронировать</a>
+  </div>
+</article>
+
+<article class="card" id="newyear_hut" data-trip-card data-difficulty="easy" data-days="3">
+  <img src="img/newyear.jpg" width="640" height="360" alt="Графический плакат маршрута «Новогодняя изба». Это не фотография места.">
+  <div class="card-body">
+    <h3><a href="trips.html#newyear_hut" data-event="trip_view" data-trip-id="newyear_hut" data-difficulty="easy">Новогодняя изба</a></h3>
+    <div class="meta"><span class="badge">легко</span><span class="badge">31.12–02.01</span></div>
+    <p>Выезд с 31 декабря по 2 января. Сложность «легко»: с 12 лет можно идти с родителем.</p>
+    <p class="price">15 900 ₽</p>
+    <a class="btn" href="contacts.html?trip_id=newyear_hut" data-event="cta_click" data-button-name="trip_book" data-page-section="picker">Забронировать</a>
+  </div>
+</article>
+</div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2>Ближайшие выезды</h2>
+    <div class="cards">
+    <article class="card">
+      <div class="card-body">
+        <h3><a href="calendar.html#dep-snowshoes-2026-12-05" data-event="trip_view" data-trip-id="snowshoes" data-difficulty="easy">5 декабря · Снегоступы для начинающих</a></h3>
+        <p>Свободно мест: 11 из 16</p>
+        <a class="btn" href="contacts.html?trip_id=snowshoes&amp;trip_date=2026-12-05" data-event="cta_click" data-button-name="nearest_book" data-page-section="nearest">Забронировать</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-body">
+        <h3><a href="calendar.html#dep-icefalls-2026-12-06" data-event="trip_view" data-trip-id="icefalls" data-difficulty="easy">6 декабря · Ледяные водопады</a></h3>
+        <p>Свободно мест: 4 из 16</p>
+        <a class="btn" href="contacts.html?trip_id=icefalls&amp;trip_date=2026-12-06" data-event="cta_click" data-button-name="nearest_book" data-page-section="nearest">Забронировать</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-body">
+        <h3><a href="calendar.html#dep-sunrise-2026-12-07" data-event="trip_view" data-trip-id="sunrise" data-difficulty="medium">7 декабря · Рассвет на Седой горе</a></h3>
+        <p>Свободно мест: 5 из 16</p>
+        <a class="btn" href="contacts.html?trip_id=sunrise&amp;trip_date=2026-12-07" data-event="cta_click" data-button-name="nearest_book" data-page-section="nearest">Забронировать</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-body">
+        <h3><a href="calendar.html#dep-snowshoes-2026-12-12" data-event="trip_view" data-trip-id="snowshoes" data-difficulty="easy">12 декабря · Снегоступы для начинающих</a></h3>
+        <p>Свободно мест: 2 из 16</p>
+        <a class="btn" href="contacts.html?trip_id=snowshoes&amp;trip_date=2026-12-12" data-event="cta_click" data-button-name="nearest_book" data-page-section="nearest">Забронировать</a>
+      </div>
+    </article>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2>Инструкторы</h2>
+    <div class="cards">
+    <article class="card"><div class="card-body">
+      <h3><a href="guides.html#ageeva" data-event="guide_view" data-guide-id="ageeva">Агеева Ксения Тимуровна</a></h3>
+      <p>Руководитель направления «Походы»</p>
+    </div></article>
+    <article class="card"><div class="card-body">
+      <h3><a href="guides.html#instructor_lead" data-event="guide_view" data-guide-id="instructor_lead">Инструктор группы</a></h3>
+      <p>Первый инструктор выезда. В группе их двое.</p>
+    </div></article>
+    <article class="card"><div class="card-body">
+      <h3><a href="guides.html#instructor_support" data-event="guide_view" data-guide-id="instructor_support">Второй инструктор группы</a></h3>
+      <p>Страховка и темп группы на выезде.</p>
+    </div></article>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap safety-grid">
+    <div class="panel">
+      <h2>Безопасность</h2>
+      <ul>
+        <li>В каждом выезде два инструктора.</li>
+        <li>В стоимость входит страховка от несчастного случая.</li>
+        <li>Связь по вопросам маршрута: trips@tropa-club.example и Telegram @tropa_trips.</li>
+        <li>Участники с 18 лет. С 12 лет — только в походах «легко» и вместе с родителем.</li>
+        <li>Бронь после предоплаты 30%. Отмена за 7 дней — возврат предоплаты.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h2>Что входит в стоимость</h2>
+      <ul>
+        <li>Работа двух инструкторов</li>
+        <li>Трансфер от ж/д вокзала</li>
+        <li>Групповое снаряжение</li>
+        <li>Горячее питание в многодневных походах</li>
+        <li>Страховка от несчастного случая</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <strong>ООО «Тропа»</strong>
+      <p>614170, г. Новоозёрск, ул. Таёжная, д. 3, офис 2</p>
+      <p><a href="tel:+79001111131" data-event="contact_click" data-contact-type="phone">+7 (900) 111-11-31</a><br>
+      <a href="mailto:go@tropa-club.example" data-event="contact_click" data-contact-type="email">go@tropa-club.example</a></p>
+    </div>
+    <div>
+      <p><a href="privacy.html">Политика конфиденциальности</a></p>
+      <p>ИНН 9911230805 · КПП 991101001<br>ОГРН 1209900023082</p>
+    </div>
+    <div>
+      <div class="socials">
+        <a href="https://instagram.com/" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+        <a href="https://vk.com/" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+        <a href="https://t.me/tropa_trips" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+        <a href="https://www.youtube.com/" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap legal">Турклуб «Тропа» · зимние маршруты вокруг Новоозёрска · группа до 16 человек</div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
