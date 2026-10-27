@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Бронь и контакты — турклуб «Тропа»</title>
+  <meta name="description" content="Форма брони места в зимнем походе турклуба «Тропа»: маршрут, дата, число участников и источник.">
+  <meta property="og:title" content="Бронь и контакты — турклуб «Тропа»">
+  <meta property="og:description" content="Форма брони места в зимнем походе турклуба «Тропа»: маршрут, дата, число участников и источник.">
+  <meta property="og:image" content="https://tz-11-turklub-tropa.vercel.app/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Measurement ID: сейчас учебный G-YQM8LSJ9F7 из домашних работ. Для ТЗ замените на ресурс «ТРОПА — сайт», см. docs/podklyuchenie.md -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQM8LSJ9F7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YQM8LSJ9F7');
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html"><span class="logo-word">ТРОПА</span><small>походы выходного дня</small></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Меню</button>
+    <nav class="nav" id="site-nav">
+      <a href="index.html">Главная</a><a href="trips.html">Маршруты</a><a href="calendar.html">Календарь</a><a href="guides.html">Инструкторы</a><a href="gear.html">Снаряжение</a><a href="contacts.html" aria-current="page">Бронь</a>
+      <a class="header-phone" href="tel:+79001111131" data-event="contact_click" data-contact-type="phone">+7 (900) 111-11-31</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="section">
+  <div class="wrap split">
+    <div>
+      <p class="kicker">Место в группе</p>
+      <h1>Бронь и контакты</h1>
+      <form id="booking-form" action="https://script.google.com/macros/s/REPLACE_WITH_DEPLOYMENT_ID/exec" method="post" novalidate>
+        <div class="form-grid">
+          <label class="wide">Имя
+            <input name="name" autocomplete="name" maxlength="60" required>
+            <span class="field-error" data-error-for="name"></span>
+          </label>
+          <label>Телефон
+            <input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 000-00-00" required>
+            <span class="field-error" data-error-for="phone"></span>
+          </label>
+          <label>E-mail, если удобно
+            <input name="email" type="email" autocomplete="email" maxlength="200">
+            <span class="field-error" data-error-for="email"></span>
+          </label>
+          <label>Маршрут
+            <select name="trip_id" required>
+              <option value="">Выберите маршрут</option>
+            </select>
+            <span class="field-error" data-error-for="trip_id"></span>
+          </label>
+          <label>Дата выезда
+            <select name="trip_date" required>
+              <option value="">Сначала выберите маршрут</option>
+            </select>
+            <span class="field-error" data-error-for="trip_date"></span>
+          </label>
+          <label class="wide">Участников в этой брони
+            <input name="participants" type="number" min="1" max="6" value="1" required>
+            <span class="field-error" data-error-for="participants"></span>
+          </label>
+          <label class="consent wide"><input type="checkbox" name="adult"> <span>Мне есть 18 лет или я иду с родителем</span></label>
+          <span class="field-error wide" data-error-for="adult"></span>
+          <label class="consent wide"><input type="checkbox" name="consent"> <span>Согласен на обработку персональных данных</span></label>
+          <p class="wide">Текст: <a href="privacy.html">политика конфиденциальности</a>.</p>
+          <span class="field-error wide" data-error-for="consent"></span>
+          <input type="hidden" name="request_id">
+          <input type="hidden" name="utm_source">
+          <input type="hidden" name="utm_medium">
+          <input type="hidden" name="utm_campaign">
+          <input type="hidden" name="utm_content">
+          <div class="wide"><button class="btn" type="submit">Отправить бронь</button></div>
+          <p class="status wide" id="form-status" role="status"></p>
+        </div>
+      </form>
+    </div>
+    <div class="panel">
+      <h2>Контакты</h2>
+      <p><a href="tel:+79001111131" data-event="contact_click" data-contact-type="phone">+7 (900) 111-11-31</a></p>
+      <p><a href="mailto:go@tropa-club.example" data-event="contact_click" data-contact-type="email">go@tropa-club.example</a></p>
+      <p>Вопросы по маршрутам: Агеева Ксения Тимуровна, trips@tropa-club.example.</p>
+      <div class="actions">
+        <a class="btn" href="https://t.me/tropa_trips" data-event="messenger_click" data-messenger="telegram">Telegram</a>
+        <a class="btn btn-ghost" href="https://wa.me/79001111131" data-event="messenger_click" data-messenger="whatsapp">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <strong>ООО «Тропа»</strong>
+      <p>614170, г. Новоозёрск, ул. Таёжная, д. 3, офис 2</p>
+      <p><a href="tel:+79001111131" data-event="contact_click" data-contact-type="phone">+7 (900) 111-11-31</a><br>
+      <a href="mailto:go@tropa-club.example" data-event="contact_click" data-contact-type="email">go@tropa-club.example</a></p>
+    </div>
+    <div>
+      <p><a href="privacy.html">Политика конфиденциальности</a></p>
+      <p>ИНН 9911230805 · КПП 991101001<br>ОГРН 1209900023082</p>
+    </div>
+    <div>
+      <div class="socials">
+        <a href="https://instagram.com/" data-event="social_click" data-network="instagram" data-page-section="footer">Instagram</a>
+        <a href="https://vk.com/" data-event="social_click" data-network="vk" data-page-section="footer">ВКонтакте</a>
+        <a href="https://t.me/tropa_trips" data-event="social_click" data-network="telegram" data-page-section="footer">Telegram</a>
+        <a href="https://www.youtube.com/" data-event="social_click" data-network="youtube" data-page-section="footer">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap legal">Турклуб «Тропа» · зимние маршруты вокруг Новоозёрска · группа до 16 человек</div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
