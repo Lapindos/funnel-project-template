@@ -12,7 +12,7 @@
 | Сайт на Vercel | https://tz-11-turklub-tropa.vercel.app |
 | Описание работы `docs/opisanie.md` | https://github.com/lapindos/tz-11-turklub-tropa/blob/main/docs/opisanie.md |
 | Презентация `presentation/zashchita.pdf` | https://github.com/lapindos/tz-11-turklub-tropa/blob/main/presentation/zashchita.pdf |
-| Таблица заявок (доступ на просмотр) | подключается исполнителем по инструкции в репозитории: `docs/podklyuchenie.md` |
+| Таблица заявок (доступ на просмотр) | приёмник подключён в `js/config.js` репозитория проекта. Ссылку на просмотр таблицы исполнитель открывает заказчику |
 | Дашборд DataLens | будет после выгрузки GA4, состав вкладок в `docs/datalens.md` |
 | Reel с автоответом | тексты веток СНАРЯГА и НОВИЧОК в `docs/manychat.md`, аккаунт `tropa_hiking` создаёт исполнитель |
 
@@ -29,5 +29,5 @@
 
 Репозиторий проекта публичный. Описание, поле Website и Topics в настройках GitHub исполнитель ставит сам: About — `Сайт турклуба «Тропа»: GA4, UTM, брони в Google Таблицу, ManyChat, дашборд DataLens`, Website — адрес Vercel, topics — `google-analytics`, `utm`, `apps-script`, `manychat`, `datalens`, `vercel`.
 
-**Не получилось:** из этой среды нельзя войти в GA4, Google Таблицу, соцсети, ManyChat и DataLens. Сайт, события, приёмник заявок, реестр из 12 ссылок, QR, афиша, схема, описание и презентация собраны. Куда вставить Measurement ID и URL Apps Script, написано в `docs/podklyuchenie.md` репозитория проекта.
+**Не получилось:** короткие ссылки, публикации в соцсетях, ManyChat Live и дашборд DataLens. Ресурс GA4 `G-3R2JCQ7P84` и URL приёмника заявок уже стоят в репозитории проекта. Ссылку на просмотр таблицы исполнитель открывает заказчику сам.
 **ИИ:** использовал для страниц, текстов по ТЗ, кода событий и Apps Script, схемы и презентации
